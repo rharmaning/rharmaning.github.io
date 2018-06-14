@@ -33,8 +33,8 @@ resume_section_associations:    false
 # Resume social links
 # uncomment the options you wish to display, and add your own URL
 resume_social_links:
-  resume_github_url:            "https://github.com/rharmaning"
-  resume_twitter_url:           "http://twitter.com/rharmaning"
+  resume_github_url:            "https://github.io/rharmaning"
+  resume_twitter_url:           "http://twitter.io/rharmaning"
   #resume_dribbble_url:          "https://dribbble.com/jag"
   # resume_facebook_url:          "insert Facebook URL here"
   resume_linkedin_url:          "https://www.linkedin.com/in/ryanharmaning"
