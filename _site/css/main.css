@@ -184,7 +184,7 @@ html {
   background: #fff;
 }
 body {
-  font-family: "Open Sans", "Minion Pro", Palatino, Georgia, serif;
+  font-family: "Lora", "Minion Pro", Palatino, Georgia, serif;
   color: #333;
   font-size: 16px;
   line-height: 1.5;
@@ -466,3 +466,29 @@ body {
   font-weight: 700;
   color: #333;
 }
+/* Force CSS Reset for Skill Areas */
+#skills {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    list-style: none !important; /* Ensure bullets are removed */
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  #skills ul li {
+    background: #e0e0e0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    min-width: 180px; /* Ensure uniform box size */
+  }
