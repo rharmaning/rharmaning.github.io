@@ -5,6 +5,7 @@
   <body
     class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}"
   >
+
     <div class="wrapper" itemscope itemtype="http://schema.org/Person">
       <header class="page-header">
         <!-- You can turn off the avatar in _config.yml by setting to false -->
@@ -61,17 +62,24 @@
         <header class="section-header">
           <h2>skill areas</h2>
         </header>
-
+      
         <div class="resume-item">
-          <ul class="columns">
-            <li class="column one-half">Cypress, Jest, Postman\Newman</li>
-            <li class="column one-half">Typescript, React, AWS</li>
-            <li class="column one-half">Azure DevOps, DataDog, GraphQL, SQL</li>
-            <li class="column one-half">API and UI Test Automation, Mobile Testing</li>
-            <li class="column one-half">Agile, Kanban, TDD</li>
-            <li class="column one-half">Leadership, Mentoring, Cross-Team Collaboration</li>
-            <li class="column one-half">Clarifier of Project and Product Requirements</li>
-          </ul>
+          <div id="skills-container">
+            <!-- Hard Skills -->
+            <ul class="skills-column">
+              <li>Cypress, Jest, Postman\Newman</li>
+              <li>Azure DevOps, DataDog, GraphQL, SQL</li>
+              <li>Typescript, React, AWS</li>
+              <li>API and UI Test Automation, AI Testing, Mobile Testing</li>
+            </ul>
+      
+            <!-- Soft Skills -->
+            <ul class="skills-column">
+              <li>Agile, Kanban, TDD</li>
+              <li>Leadership, Mentoring, Cross-Team Collaboration</li>
+              <li>Clarifier of Project and Product Requirements</li>
+            </ul>
+          </div>
         </div>
       </section>
       {% endif %} {% if site.resume_section_experience %}
@@ -103,6 +111,7 @@
               performant React Application
             </li>
             <li>Write test automation for the API and UI</li>
+            <li>Leverage AI daily in areas of code writing\debugging and generating documentation or presentation materials</li>
             <li>Drive and contribute to team-wide improvements in code quality, test coverage, and process improvement</li>
             <li>Triage and resolve issues in CI\CD pipelines related to test automation</li>
             <li>
@@ -116,7 +125,7 @@
               migrations and re-orgs
             </li>
             <li>
-              Cypress, JEST, Typescript, React, GQL, Azure DevOps, DataDog, AWS
+              Cypress, JEST, Typescript, CoPilot, React, GQL, Azure DevOps, DataDog, AWS
             </li>
           </ul>
         </div>
