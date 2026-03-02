@@ -4,6 +4,8 @@
   "scripts": {
     "format": "prettier --write .",
     "format:check": "prettier --check .",
+    "format:resume": "prettier --write _layouts/resume.html",
+    "check:resume": "prettier --check _layouts/resume.html",
     "lint": "npm run format:check"
   },
   "devDependencies": {
