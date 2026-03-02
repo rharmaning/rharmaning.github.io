@@ -3,3 +3,5 @@
 
 *.scssc
 _site/
+node_modules/
+.bundle/

@@ -1,21 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   {% include head.html %}
 
-  <body
-    class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}"
-  >
-
+  <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
     <div class="wrapper" itemscope itemtype="http://schema.org/Person">
       <header class="page-header">
         <!-- You can turn off the avatar in _config.yml by setting to false -->
         {% if site.resume_avatar == 'true' %}
-        <img
-          src="images/avatar.jpg"
-          alt="my photo"
-          class="avatar"
-          itemprop="image"
-        />
+        <img src="images/avatar.jpg" alt="my photo" class="avatar" itemprop="image" />
         {% endif %}
 
         <!-- Your name is defined in the _config.yml file -->
@@ -23,9 +15,7 @@
 
         <div class="title-bar">
           <!-- Your title is also defined in the _config.yml file -->
-          <h2 class="header-title" itemprop="jobTitle">
-            {{ site.resume_title }}
-          </h2>
+          <h2 class="header-title" itemprop="jobTitle">{{ site.resume_title }}</h2>
 
           <!-- This is the markup for the icon links; moved out to an include because it's very verbose, and you shouldn't ever need to edit the markup (unless you want to re-order the icons); if you want to customize which links appear, define them in the _config.yml file -->
           {% include icon-links.html %}
@@ -33,13 +23,14 @@
 
         <div class="executive-summary" itemprop="description">
           <p>
-            A seasoned Test-Engineer and team leader focused on improving
-            quality at every layer of the Product from team-communication, to
-            work-scoping, to writing test automation and applying appropriate
-            technologies\methodologies. Driven by a desire to
-            learn and passion for collaboration and mentoring. Able to see
-            through the clutter, expose and communicate areas of risk, and
-            advocate for the customer.
+            Seasoned Quality Engineering leader focused on elevating quality across the
+            product lifecycle, from team collaboration and scoping to robust test
+            automation and modern technologies like generative AI and agentic workflows.
+            Extensively leverage AI tools (including Claude for code/skills development
+            and custom agents for QE automation) to accelerate delivery, reduce risk,
+            and enhance outcomes. Passionate about learning, mentoring, cross-team
+            partnership, clarifying requirements, and advocating for the customer in
+            dynamic environments.
           </p>
         </div>
 
@@ -51,9 +42,7 @@
           >Contact me</a
         >
         {% elsif site.resume_looking_for_work == 'no' %}
-        <a class="contact-button not-looking"
-          >I'm not looking for work right now.</a
-        >
+        <a class="contact-button not-looking">I'm not looking for work right now.</a>
         {% else %} {% endif %}
       </header>
 
@@ -62,22 +51,23 @@
         <header class="section-header">
           <h2>skill areas</h2>
         </header>
-      
+
         <div class="resume-item">
           <div id="skills-container">
             <!-- Hard Skills -->
             <ul class="skills-column">
-              <li>Cypress, Jest, Postman\Newman</li>
+              <li>Claude Code, Copilot, Prompt Engineering, Agentic Workflows</li>
+              <li>Cypress, Playwright, Jest, Bruno</li>
               <li>Azure DevOps, DataDog, GraphQL, SQL</li>
               <li>Typescript, React, AWS</li>
-              <li>API and UI Test Automation, AI Testing, Mobile Testing</li>
+              <li>API and UI Test Automation, AI Testing</li>
             </ul>
-      
+
             <!-- Soft Skills -->
             <ul class="skills-column">
               <li>Agile, Kanban, TDD</li>
               <li>Leadership, Mentoring, Cross-Team Collaboration</li>
-              <li>Clarifier of Project and Product Requirements</li>
+              <li>Clarifier of Product Requirements and Intent</li>
             </ul>
           </div>
         </div>
@@ -95,33 +85,35 @@
           itemprop="worksFor"
           itemtype="http://schema.org/Organization"
         >
-          <h3 class="resume-item-title" itemprop="name">
-            First American Title
-          </h3>
+          <h3 class="resume-item-title" itemprop="name">First American Title</h3>
           <h4 class="resume-item-details" itemprop="description">
-            Delivery Lead, Quality Engineering &bull; March, 2022 &mdash; present
+            Lead Quality Engineer &bull; March, 2022 &mdash; present
           </h4>
           <p class="resume-item-copy">
             QE Team Lead for industry-disrupting mortgage processing application
           </p>
           <ul class="resume-item-list">
-            <li>Help build and lead a team of Quality Engineers building a modern, performant, React Application</li>
-            <li>Write test automation for the API and UI</li>
-            <li>Leverage AI daily in areas of code writing\debugging and generating documentation or presentation materials</li>
-            <li>Drive and contribute to team-wide improvements in code quality, test coverage, and process improvement</li>
-            <li>Triage and resolve issues in CI\CD pipelines related to test automation</li>
             <li>
-              Coach and mentor Quality Engineers across multiple feature teams
+              Architect AI agents and augment automation via Claude Code (terminal CLI)
+              to automate QE pain points (bug validation, flaky triage, E2E regression),
+              applying critical human judgment to refine outputs for
+              reliability/maintainability, while generating/refactoring scripts and
+              expanding coverage in Cypress/Playwright/Jest/Bruno/TypeScript suites,
+              cutting manual time and elevating release quality.
             </li>
             <li>
-              Drive quality initiatives through collaboration with key Product stakeholders
+              Lead a QE team delivering a high-performance React mortgage application,
+              fostering ownership and excellence in a dynamic and highly regulated
+              industry.
             </li>
             <li>
-              Grow healthy, engaged team culture during and after team
-              migrations and re-orgs
+              Drive code quality, coverage, CI/CD stability, and process gains through
+              collaboration, data insights, and continuous improvement.
             </li>
             <li>
-              Cypress, JEST, Typescript, CoPilot, React, GQL, Azure DevOps, DataDog, AWS
+              Mentor across teams, align with Product on quality initiatives, and
+              sustain positive culture amid re-orgs, system migrations, and shift-left
+              process changes.
             </li>
           </ul>
         </div>
@@ -141,22 +133,19 @@
             fully-featured online-community management app:
           </p>
           <ul class="resume-item-list">
+            <li>Migrated aging Selenium tests to Cypress for the React front-end.</li>
             <li>
-              Migrate aging Selenium tests to Cypress for the React front-end
+              Collaborated across multiple feature teams on exploratory testing and
+              release support.
             </li>
             <li>
-              Work across multiple feature teams in areas of exploratory testing
-              and release support
+              Analyzed existing processes and advised engineering leadership on
+              effective QA integration opportunities.
             </li>
             <li>
-              Improve Quality stance through analysis of existing processes
-              and consult engeering leadership on appropriate areas of QA-integration
+              Mentored junior QA testers in testing philosophy, execution, and skill
+              development.
             </li>
-            <li>
-              Mentor junior QA Testers in areas of testing philosophy,
-              execution, and skill development
-            </li>
-            <li>Cypress, React, C#, Postman</li>
           </ul>
         </div>
         <div
@@ -170,30 +159,22 @@
             QA Engineer &bull; May, 2020 &mdash; May 2021
           </h4>
           <p class="resume-item-copy">
-            QA Engineer on a small team supporting a large
-            E-Commerce website:
+            QA Engineer on a small team supporting a large E-Commerce website:
           </p>
           <ul class="resume-item-list">
             <li>
-              Plan and execute extensive exploratory testing around new
-              features, 3rd party integrations, and bug fixes
+              Planned and executed extensive exploratory testing for new features,
+              third-party integrations, and bug fixes.
+            </li>
+            <li>Expanded UI functional test automation coverage using webdriver.io.</li>
+            <li>
+              Evaluated and demonstrated emerging testing tools and technologies
+              (Postman, Cypress) for potential adoption.
             </li>
             <li>
-              Augment existing UI functional test automation coverage in
-              webdriver.io
-            </li>
-            <li>
-              Explore and demo alternate\emerging technologies and tools to
-              leverage into the QA space (Postman, Cypress)
-            </li>
-            <li>
-              Partner with the Team in building a quality-culture through
-              coaching, test-pairing, and brown-bag presentations, all in a
-              remote working environment
-            </li>
-            <li>
-              webdriver.io, SalesForce Commerce Cloud, CyberSource, Postman,
-              Cypress
+              Partnered with the team to build a quality-focused culture through
+              coaching, test-pairing, and brown-bag sessions in a fully remote
+              environment.
             </li>
           </ul>
         </div>
@@ -209,35 +190,27 @@
             Software QA Manager &bull; Mar, 2017 &mdash; March 2020
           </h4>
           <p class="resume-item-copy">
-            Strategic and functional test lead for Rubica mobile and desktop
-            VPN apps:
+            Strategic and functional test lead for Rubica mobile and desktop VPN apps:
           </p>
           <ul class="resume-item-list">
             <li>
-              Implemented a flexible and disciplined testing approach to the
-              Rubica App-landscape including desktop, mobile apps, and
-              web-portal
+              Implemented a flexible, disciplined testing strategy across desktop,
+              mobile, and web-portal applications.
             </li>
             <li>
-              Composed and maintained extensive library of manual and automated
-              test cases and test plans for all supported platforms
+              Created and maintained a comprehensive library of manual and automated
+              test cases and plans for all supported platforms.
+            </li>
+            <li>Evaluated and deployed tools for automated API and UI testing.</li>
+            <li>
+              Developed internal process documentation and skills matrices to support
+              effective hiring and onboarding.
             </li>
             <li>
-              Evaluated and implemented tooling for automated API and UI testing
+              Drove UX and performance improvements through close collaboration with
+              Product and Engineering teams.
             </li>
-            <li>
-              Developed internal process and skills matrices for effective
-              interviews\hires
-            </li>
-            <li>
-              Drove UX and App performance improvements through close
-              collaboration with Product and Engineering teams
-            </li>
-            <li>Remote pair-testing\debugging with developers</li>
-            <li>
-              Postman, Katalon Studio, Javascript, Python, MySQL, iOS Simulator,
-              Android Emulator
-            </li>
+            <li>Conducted remote pair-testing and debugging with developers.</li>
           </ul>
         </div>
 
@@ -256,18 +229,16 @@
           </p>
           <ul class="resume-item-list">
             <li>
-              Extensive exploratory testing of all FONS app functionality
-              through a migration to React-Native
+              Performed extensive exploratory testing across all FONS app functionality
+              during a migration to React Native.
             </li>
             <li>
-              Contribute design\UEX feedback implemented into production app
+              Provided design and UX feedback that was implemented in the production
+              application.
             </li>
-            <li>Formulate and document user workflows for test automation</li>
-            <li>
-              Developed automated API integration tests with Postman\Newman
-            </li>
-            <li>Remote pair-testing and debugging with developers</li>
-            <li>iOS Simulator, Android Emulator, PostgreSQL, Postman\Newman</li>
+            <li>Defined and documented user workflows to support test automation.</li>
+            <li>Developed automated API integration tests using Postman/Newman.</li>
+            <li>Conducted remote pair-testing and debugging with developers.</li>
           </ul>
         </div>
 
@@ -289,23 +260,20 @@
           </p>
           <ul class="resume-item-list">
             <li>
-              Developed improvements to invoicing systems to dramatically
-              improve accuracy and speed.
+              Developed improvements to invoicing systems to dramatically improve
+              accuracy and speed.
             </li>
             <li>
-              Developed automation for data center deployment and management
-              using Ansible
+              Developed automation for data center deployment and management using
+              Ansible
             </li>
             <li>
-              Continued expansion of automated API testing tools and processes
-              with Postman
+              Continued expansion of automated API testing tools and processes with
+              Postman
             </li>
             <li>
-              Served in on-call rotation for diagnosing and resolving Platform
-              outages and issue escalations.
-            </li>
-            <li>
-              C#, Couchbase, ELK, XUnit, SQL Server, Ansible, Postman, Newman
+              Served in on-call rotation for diagnosing and resolving Platform outages
+              and issue escalations.
             </li>
           </ul>
         </div>
@@ -321,41 +289,32 @@
             SDET &bull; April 2012 &mdash; Jun, 2015
           </h4>
           <p class="resume-item-copy">
-            Test-Engineer on a small team responsible for measurably increasing
-            quality on the full Tier3 SAAS\IAAS stack via exploratory and
-            automated testing:
+            Test-Engineer on a small team responsible for measurably increasing quality
+            on the full Tier3 SAAS\IAAS stack via exploratory and automated testing:
           </p>
           <ul class="resume-item-list">
+            <li>Developed automated API test suites adopted into team-wide use.</li>
             <li>
-              Developed automated API test suites adopted into team-wide use.
+              Contribute to an automated suite of coded-UI Tests (C# + Selenium Grid).
             </li>
             <li>
-              Contribute to an automated suite of coded-UI Tests (C# + Selenium
-              Grid).
+              Serve as a test-pair with developers especially in areas of feature
+              integration.
             </li>
             <li>
-              Serve as a test-pair with developers especially in areas of
-              feature integration.
+              Continuous quality improvement through triaging and expanding a backlog of
+              exploratory testing charters.
             </li>
             <li>
-              Continuous quality improvement through triaging and expanding a
-              backlog of exploratory testing charters.
+              Provide active, engaged support and smoke-testing for platform releases.
             </li>
             <li>
-              Provide active, engaged support and smoke-testing for platform
-              releases.
+              Leveraged extensive domain knowledge to test integration with Centurylink
+              systems during and post-acquisition.
             </li>
             <li>
-              Leveraged extensive domain knowledge to test integration with
-              Centurylink systems during and post-acquisition.
-            </li>
-            <li>
-              Serve in on-call rotation for diagnosing and resolving Platform
-              outages and issue escalations.
-            </li>
-            <li>
-              C#, Couchbase, Elastic, Kibana, SQL Server, HTML, CSS, Javascript,
-              JQuery, Selenium WebDriver, Postman, Newman
+              Serve in on-call rotation for diagnosing and resolving Platform outages
+              and issue escalations.
             </li>
           </ul>
         </div>
@@ -371,34 +330,29 @@
           </h4>
           <p class="resume-item-copy">
             Sole Testing\QA resource for the Digital Team tasked with bringing
-            visibility and robustness to the QA Process. Established QA Best
-            Practices to inform testing approaches for a variety of client
-            projects:
+            visibility and robustness to the QA Process. Established QA Best Practices
+            to inform testing approaches for a variety of client projects:
           </p>
           <ul class="resume-item-list">
             <li>
-              Measurably increased test coverage and confidence of project
-              releases through test case creation and maintenance
+              Increased test coverage and release confidence by creating and maintaining
+              comprehensive test cases.
             </li>
             <li>
-              Researched and implemented various testing tools including
-              building a framework for automated UX testing (Selenium RC, C#).
+              Researched and implemented testing tools, including building a framework
+              for automated UX testing (Selenium RC, C#).
             </li>
             <li>
-              Worked closely with Project Management to refine and clarify
-              requirements and schedule at all phases of project life-cycle.
+              Collaborated with Project Management to clarify and refine requirements
+              across all project phases.
             </li>
             <li>
-              Built and maintained multiple Test environments for Integration
-              and UI testing.
+              Built and maintained multiple test environments for integration and UI
+              testing.
             </li>
             <li>
-              Regularly wrote and optimized SQL queries for evaluating Data
-              Integrity for Lead Generation System and report validation.
-            </li>
-            <li>
-              SQL Server, C#, Selenium RC, HTML, CSS, Javascript, AJAX, Flex,
-              Flash
+              Wrote and optimized SQL queries to validate data integrity and generate
+              reports.
             </li>
           </ul>
         </div>
@@ -445,40 +399,6 @@
         <!-- end of resume-item -->
       </section>
       <!-- end Experience -->
-      {% endif %} {% if site.resume_section_education %}
-      <!-- begin Education -->
-      <section class="content-section">
-        <header class="section-header">
-          <h2>Education</h2>
-        </header>
-
-        <div
-          class="resume-item"
-          itemscope
-          itemprop="alumniOf"
-          itemtypea="http://schema.org/CollegeOrUniversity"
-        >
-          <h3 class="resume-item-title" itemprop="name">
-            University of Washington Extension
-          </h3>
-          <h4 class="resume-item-details" itemprop="description">
-            Certificate, Software Testing Automation with C#
-          </h4>
-        </div>
-
-        <div
-          class="resume-item"
-          itemscope
-          itemprop="alumniOf"
-          itemtypea="http://schema.org/CollegeOrUniversity"
-        >
-          <h3 class="resume-item-title" itemprop="name">SQE Training</h3>
-          <h4 class="resume-item-details" itemprop="description">
-            Certificate, Mastering Test Design
-          </h4>
-        </div>
-      </section>
-      <!-- end Education -->
       {% endif %} {% if site.resume_section_projects %}
       <!-- begin Projects -->
       <section class="content-section">
@@ -494,22 +414,20 @@
             Founder & Primary Developer &bull; 2012 &mdash; Present
           </h4>
           <p class="resume-item-copy">
-            Donut Locator is an open source node/ember app that lets users find
-            donuts within a defined radius from their home.
+            Donut Locator is an open source node/ember app that lets users find donuts
+            within a defined radius from their home.
           </p>
         </div>
 
         <div class="resume-item">
-          <h3 class="resume-item-title">
-            Springfield Donut Eater's User Group
-          </h3>
+          <h3 class="resume-item-title">Springfield Donut Eater's User Group</h3>
           <h4 class="resume-item-details">
             Co-Founder & Organizer &bull; 2007 &mdash; Present
           </h4>
           <p class="resume-item-copy">
-            DEUG is a local monthly meetup in Springfield where we share all the
-            latest tips and tricks for dat donut lifestyle. I organize the
-            group, and typically eat most of the donuts.
+            DEUG is a local monthly meetup in Springfield where we share all the latest
+            tips and tricks for dat donut lifestyle. I organize the group, and typically
+            eat most of the donuts.
           </p>
         </div>
       </section>
@@ -525,12 +443,9 @@
           <h3 class="resume-item-title" itemprop="award">
             Springfield Nuclear Power Plant
           </h3>
-          <h4 class="resume-item-details">
-            Outstanding Achievement &bull; 2010
-          </h4>
+          <h4 class="resume-item-details">Outstanding Achievement &bull; 2010</h4>
           <p class="resume-item-copy">
-            Awarded for stopping a nuclear meltdown, even though I also started
-            it.
+            Awarded for stopping a nuclear meltdown, even though I also started it.
           </p>
         </div>
 
@@ -543,21 +458,18 @@
           </h4>
           <p class="resume-item-copy">
             Honored by
-            <a href="https://en.wikipedia.org/wiki/Duff_Beer">Duff Beer</a> for
-            being an outstanding customer several years straight. Qualifications
-            included most beer consumed at a bar, most beer purchased, and most
-            beer ralphed.
+            <a href="https://en.wikipedia.org/wiki/Duff_Beer">Duff Beer</a> for being an
+            outstanding customer several years straight. Qualifications included most
+            beer consumed at a bar, most beer purchased, and most beer ralphed.
           </p>
         </div>
 
         <div class="resume-item">
-          <h3 class="resume-item-title" itemprop="award">
-            Moe's Patron of the Month
-          </h3>
+          <h3 class="resume-item-title" itemprop="award">Moe's Patron of the Month</h3>
           <h4 class="resume-item-details">12/2001, 8/2004</h4>
           <p class="resume-item-copy">
-            Specifically this prestigious awarded twice for stopping a robber
-            with my belly.
+            Specifically this prestigious awarded twice for stopping a robber with my
+            belly.
           </p>
         </div>
       </section>
@@ -573,20 +485,16 @@
           <h3 class="resume-item-title">
             <a href="http://beerfortheworld.com">Beer for the World</a>
           </h3>
-          <h4 class="resume-item-details">
-            Volunteer &bull; 2008 &mdash; Present
-          </h4>
+          <h4 class="resume-item-details">Volunteer &bull; 2008 &mdash; Present</h4>
           <p class="resume-item-copy">
-            Organized fund drives and participated in fundraising events for the
-            benefit of families in third world countries without proper access
-            to malt beverages.
+            Organized fund drives and participated in fundraising events for the benefit
+            of families in third world countries without proper access to malt
+            beverages.
           </p>
         </div>
 
         <div class="resume-item">
-          <h3 class="resume-item-title">
-            Springfield Nuclear Workers Labor Union
-          </h3>
+          <h3 class="resume-item-title">Springfield Nuclear Workers Labor Union</h3>
           <h4 class="resume-item-details">
             Member in Good Standin &bull; 1994 &mdash; Present
           </h4>
