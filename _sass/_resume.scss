@@ -151,6 +151,16 @@ body {
     line-height: 1;
   }
 
+  .resume-scope-title {
+    font-size: 1rem;
+    margin: 0.55rem 0 0.15rem;
+    line-height: 1.1;
+  }
+
+  .resume-scope-title + .resume-item-list {
+    margin-top: 0;
+  }
+
   .resume-item-title,
   .resume-item-details,
   .resume-item-copy,
